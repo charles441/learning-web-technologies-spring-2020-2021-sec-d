@@ -9,7 +9,7 @@
 		$password = $_POST['password'];
 
 		if($username == "" || $password == ""){
-			echo "null input...";
+			echo "null input";
 		}else{
 
 			
@@ -21,7 +21,7 @@
 
 				header('location: ../view/home.php');
 			}else{
-				echo "invalid user...";
+				echo "invalid user!!!";
 			}
 		}
 	}
