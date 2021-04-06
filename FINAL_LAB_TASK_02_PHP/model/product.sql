@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 23, 2021 at 04:38 AM
+-- Generation Time: Mar 24, 2021 at 05:59 PM
 -- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- PHP Version: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,29 +18,29 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `product_db`
+-- Database: `webtech`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products`
+-- Table structure for table `product`
 --
 
-CREATE TABLE `products` (
-  `name` varchar(20) NOT NULL,
-  `buyingPrice` int(10) NOT NULL,
-  `sellingPrice` int(10) NOT NULL
+CREATE TABLE `product` (
+  `ID` int(50) DEFAULT NULL,
+  `Name` varchar(50) NOT NULL,
+  `Buyingprice` int(50) NOT NULL,
+  `sellingprice` int(50) NOT NULL,
+  `Display` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `products`
+-- Dumping data for table `product`
 --
 
-INSERT INTO `products` (`name`, `buyingPrice`, `sellingPrice`) VALUES
-('Samsung', 2000, 7000),
-('Nokia', 5000, 6500),
-('Xiaomi', 1000, 4300);
+INSERT INTO `product` (`ID`, `Name`, `Buyingprice`, `sellingprice`, `Display`) VALUES
+(0, 'aaaaaaaaaa', 1200, 1300, 'No');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
